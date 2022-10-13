@@ -66,7 +66,7 @@ public class Jouet {
 			System.out.println("Voulez vous continuer ? (Oui/Non)");
 			accept = saisieUtilisateur.next();
 			}
-			
+			System.out.println("Fin de la partie, votre score est de "+perso.getScore()+" points");
 		}
 		
 			
