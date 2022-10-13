@@ -39,9 +39,8 @@ public class Jouet {
 		
 		while (accept.equals("Oui")|| accept.equals("oui")||accept.equals("O")||accept.equals("o"))
 		{
-			System.out.println(perso.getPv());
-			System.out.println(adv.getPv());
 			
+			Personnage.combat(perso, adv);
 			if (adv.getPv()<=0)
 			{
 			int advPoint = 0;
@@ -60,10 +59,10 @@ public class Jouet {
 			else if (perso.getPv()<=0)
 			{
 				System.out.println("Fin de la partie, votre score est de "+perso.getScore()+" points");
+				accept = "non";
 			}
 			else 
 			{
-			Personnage.combat(perso, adv);
 			System.out.println("Voulez vous continuer ? (Oui/Non)");
 			accept = saisieUtilisateur.next();
 			}

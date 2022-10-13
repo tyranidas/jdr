@@ -54,8 +54,11 @@ public  abstract class Personnage {
 		{
 			
 		}
+		if (player.getPv() >0 && adv.getPv() > 0)
+		{
 		System.out.println("il reste à "+player.getName()+" encore "+player.getPv());
 		System.out.println("il reste à "+adv.typeOf()+" encore "+adv.getPv());
+		}
 	}
 	
 	public int getForce() {
